@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src\\test\\java\\features\\AddAccount.feature",
 		glue="steps",//package name
-		//tags="",
+		tags="@regression",
 		monochrome=true,
 //not necessary		dryRun=false,
 		plugin= {

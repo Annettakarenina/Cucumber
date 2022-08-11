@@ -1,4 +1,4 @@
-
+@regression
 
 Feature: Techfios bank abd cash New Account Functionality
 
