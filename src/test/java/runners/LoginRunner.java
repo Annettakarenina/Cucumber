@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src\\test\\java\\features\\TechFiosLogin.feature",
 		glue="steps",
-		tags="@LoginFeature",
+		tags="@AddAccountScenario",
 		monochrome=true,
 //not necessary		dryRun=false,
 		plugin= {
