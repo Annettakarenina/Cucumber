@@ -1,36 +1,27 @@
 [
   {
-    "line": 3,
+    "line": 1,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 2177766600,
+              "duration": 2224370700,
               "status": "passed"
             },
             "match": {
               "location": "LoginStepDefenition.method()"
             }
-          },
-          {
-            "result": {
-              "duration": 1321910300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AddNewAccountSteps.method()"
-            }
           }
         ],
-        "line": 5,
-        "name": "User should be able to login with correct credentials",
-        "description": "",
-        "id": "techfios-login-functionality-validation;user-should-be-able-to-login-with-correct-credentials",
+        "line": 25,
+        "name": "User should be able to login with valid credentials",
+        "description": "and open a new account",
+        "id": "techfios-bank-abd-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials;;2",
         "after": [
           {
             "result": {
-              "duration": 683547500,
+              "duration": 688985900,
               "status": "passed"
             },
             "match": {
@@ -39,212 +30,312 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 963029200,
+              "duration": 877728900,
               "status": "passed"
             },
             "line": 6,
-            "name": "User is on the TechFios login page",
+            "name": "User is on the techfios login page",
             "match": {
-              "location": "LoginStepDefenition.user_is_on_the_TechFios_login_page()"
+              "location": "LoginStepDefenition.user_is_on_the_techfios_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 10042033700,
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027username\u0027]\"}\n  (Session info: chrome\u003d104.0.5112.81)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-2F3S0DP\u0027, ip: \u0027192.168.254.130\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\\Users\\annar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b53fbd5c3eb01eb65b67043cc9455997\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027username\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.sendKeys(Unknown Source)\r\n\tat pages.LoginPage.enterUserName(LoginPage.java:23)\r\n\tat steps.LoginStepDefenition.users_enter_username_as(LoginStepDefenition.java:31)\r\n\tat ✽.When Users enter username as \"demo@techfios.com\"(src/test/java/features/TechFiosLogin.feature:7)\r\n",
-              "status": "failed"
+              "duration": 5075794700,
+              "status": "passed"
             },
             "line": 7,
-            "name": "Users enter username as \"demo@techfios.com\"",
+            "name": "User enters the \"demo@techfios.com\"",
             "match": {
               "arguments": [
                 {
                   "val": "demo@techfios.com",
-                  "offset": 25
+                  "offset": 17
                 }
               ],
-              "location": "LoginStepDefenition.users_enter_username_as(String)"
+              "location": "LoginStepDefenition.user_enters_the_username(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3067179100,
+              "status": "passed"
             },
             "line": 8,
-            "name": "Users enter password as \"abc123\"",
+            "name": "User enters the\"abc123\"",
             "match": {
               "arguments": [
                 {
                   "val": "abc123",
-                  "offset": 25
+                  "offset": 16
                 }
               ],
-              "location": "LoginStepDefenition.users_enter_password_as(String)"
+              "location": "LoginStepDefenition.user_enters_the_password(String)"
             },
+            "matchedColumns": [
+              1
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 9375656000,
+              "status": "passed"
             },
             "line": 9,
-            "name": "Users clicks on Submit button",
+            "name": "User clicks on\"\u003clogin\u003e\" button",
             "match": {
-              "location": "LoginStepDefenition.users_clicks_on_Submit_button()"
+              "arguments": [
+                {
+                  "val": "\u003clogin\u003e",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDefenition.user_clicks_on_login_button(String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 6832500,
+              "status": "passed"
             },
             "line": 10,
-            "name": "User lands on Dashboard page",
+            "name": "User should land on Dashboard page",
             "match": {
-              "location": "LoginStepDefenition.user_lands_on_Dashboard_page()"
+              "location": "LoginStepDefenition.user_should_land_on_Dashboard_page()"
             },
             "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1378798200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginStepDefenition.method()"
-            }
           },
           {
             "result": {
-              "duration": 1399882100,
+              "duration": 53938100,
               "status": "passed"
             },
+            "line": 11,
+            "name": "User clicks on\"\u003cbankCash\u003e\"",
             "match": {
-              "location": "AddNewAccountSteps.method()"
-            }
-          }
-        ],
-        "line": 13,
-        "name": "User should be able to login with correct credentials",
-        "description": "",
-        "id": "techfios-login-functionality-validation;user-should-be-able-to-login-with-correct-credentials",
-        "after": [
+              "arguments": [
+                {
+                  "val": "\u003cbankCash\u003e",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDefenition.user_clicks_on_bank_cash(String)"
+            },
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 618501000,
+              "duration": 695451500,
               "status": "passed"
             },
+            "line": 12,
+            "name": "User clicks on the\"\u003cnewAccount\u003e\"",
             "match": {
-              "location": "LoginStepDefenition.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+              "arguments": [
+                {
+                  "val": "\u003cnewAccount\u003e",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefenition.user_clicks_on_the_new_account(String)"
+            },
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 558836200,
+              "duration": 64656800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters\"Anya\u0027s\"in accounts page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Anya\u0027s",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDefenition.user_enters_account_title_in_accounts_page(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61417600,
               "status": "passed"
             },
             "line": 14,
-            "name": "User is on the TechFios login page",
+            "name": "User enters\"checking\"in the accounts page",
             "match": {
-              "location": "LoginStepDefenition.user_is_on_the_TechFios_login_page()"
+              "arguments": [
+                {
+                  "val": "checking",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDefenition.user_enters_description_in_the_accounts_page(String)"
             },
-            "keyword": "Given "
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 10059726500,
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027username\u0027]\"}\n  (Session info: chrome\u003d104.0.5112.81)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-2F3S0DP\u0027, ip: \u0027192.168.254.130\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\\Users\\annar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 69d3a46226c34551d307fb08a77f36c8\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027username\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.sendKeys(Unknown Source)\r\n\tat pages.LoginPage.enterUserName(LoginPage.java:23)\r\n\tat steps.LoginStepDefenition.users_enter_username_as(LoginStepDefenition.java:31)\r\n\tat ✽.When Users enter username as \"demo2@techfios.com\"(src/test/java/features/TechFiosLogin.feature:15)\r\n",
-              "status": "failed"
+              "duration": 62187400,
+              "status": "passed"
             },
             "line": 15,
-            "name": "Users enter username as \"demo2@techfios.com\"",
+            "name": "User enters \"20\"in accounts page",
             "match": {
               "arguments": [
                 {
-                  "val": "demo2@techfios.com",
-                  "offset": 25
+                  "val": "20",
+                  "offset": 13
                 }
               ],
-              "location": "LoginStepDefenition.users_enter_username_as(String)"
+              "location": "LoginStepDefenition.user_enters_initial_balance_in_accounts_page(String)"
             },
-            "keyword": "When "
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 68595900,
+              "status": "passed"
             },
             "line": 16,
-            "name": "Users enter password as \"abc123\"",
+            "name": "User enters\"12365498\" in accounts page",
             "match": {
               "arguments": [
                 {
-                  "val": "abc123",
-                  "offset": 25
+                  "val": "12365498",
+                  "offset": 12
                 }
               ],
-              "location": "LoginStepDefenition.users_enter_password_as(String)"
+              "location": "LoginStepDefenition.user_enters_account_number_in_accounts_page(String)"
             },
-            "keyword": "When "
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 66722500,
+              "status": "passed"
             },
             "line": 17,
-            "name": "Users clicks on Submit button",
+            "name": "User enters as\"Anna Thomas\"in accounts page",
             "match": {
-              "location": "LoginStepDefenition.users_clicks_on_Submit_button()"
+              "arguments": [
+                {
+                  "val": "Anna Thomas",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDefenition.user_enters_contact_person_in_accounts_page(String)"
             },
-            "keyword": "When "
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 54126000,
+              "status": "passed"
             },
             "line": 18,
-            "name": "User lands on Dashboard page",
+            "name": "User enters as \"\u003cPhone\u003e\"in accounts page",
             "match": {
-              "location": "LoginStepDefenition.user_lands_on_Dashboard_page()"
+              "arguments": [
+                {
+                  "val": "\u003cPhone\u003e",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginStepDefenition.user_enters_phone_in_accounts_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67387700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enters \"\u003cinternetBankingURL\u003e\" in accounts page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cinternetBankingURL\u003e",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStepDefenition.user_enters_banking_url_in_accounts_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 633633000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User clicks on \"\u003csubmit\u003e\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003csubmit\u003e",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginStepDefenition.user_clicks_on_submit_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4064325300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should be able to validate account created successfully",
+            "match": {
+              "location": "LoginStepDefenition.user_should_be_able_to_validate_account_created_successfully()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 12,
-            "name": "@OtherScenario2"
-          },
-          {
-            "line": 12,
-            "name": "@Smoke"
+            "line": 3,
+            "name": "@AddAccountScenario"
           }
         ]
       }
     ],
-    "name": "TechFios Login functionality validation",
+    "name": "Techfios bank abd cash New Account Functionality",
     "description": "",
-    "id": "techfios-login-functionality-validation",
+    "id": "techfios-bank-abd-cash-new-account-functionality",
     "keyword": "Feature",
-    "uri": "src/test/java/features/TechFiosLogin.feature",
-    "tags": [
-      {
-        "line": 2,
-        "name": "@LoginFeature"
-      }
-    ]
+    "uri": "src/test/java/features/TechFiosLogin.feature"
   }
 ]

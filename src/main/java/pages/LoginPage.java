@@ -15,7 +15,7 @@ public class LoginPage {
 	 WebElement UserName;
 	 @FindBy(how = How.XPATH, using = "//input[@id='password']")
 	 WebElement Password;
-	 @FindBy(how = How.XPATH, using = "//button[@name='login']")////body/div/div/div/form/div[3]/button
+	 @FindBy(how = How.XPATH, using = "//html/body/div/div/div/form/div[3]/button")////body/div/div/div/form/div[3]/button
 	 WebElement SignInButton;
 
 	 // Methods to interact with the elements
@@ -40,7 +40,7 @@ public class LoginPage {
 	 public void clickSignInButton() {
 	  SignInButton.click();  
 	  try {
-	   Thread.sleep(3000);
+	   Thread.sleep(7000);
 	  } catch (InterruptedException e) {
 	   e.printStackTrace();
 	  }
