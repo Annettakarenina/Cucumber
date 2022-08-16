@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-import junit.framework.Assert;
 
 public class AddNewAccountPage extends TestBase{
 	
@@ -37,9 +36,7 @@ public class AddNewAccountPage extends TestBase{
 	public void clickNewAccountElement() {
 		NEW_ACCOUNT_ELEMENT.click();
 	}
-	public void verifyNewAccountPageHeader() {
-		Assert.assertEquals("Accounts", NEW_ACCOUNT_PAGE_HEADER_ELEMENT.getText());
-	}
+
 	public void insertAccountTitle(String accountTitle) {
 		ACCOUNT_TITLE_ELEMENT.sendKeys(accountTitle);
 	}
