@@ -1,205 +1,455 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/features/TechFiosLogin.feature");
 formatter.feature({
-  "line": 3,
-  "name": "TechFios Login functionality validation",
+  "line": 1,
+  "name": "Techfios bank abd cash New Account Functionality",
   "description": "",
-  "id": "techfios-login-functionality-validation",
-  "keyword": "Feature",
+  "id": "techfios-bank-abd-cash-new-account-functionality",
+  "keyword": "Feature"
+});
+formatter.scenarioOutline({
+  "line": 4,
+  "name": "User should be able to login with valid credentials",
+  "description": "and open a new account",
+  "id": "techfios-bank-abd-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 2,
-      "name": "@LoginFeature"
+      "line": 3,
+      "name": "@AddAccountScenario"
     }
   ]
 });
-formatter.before({
-  "duration": 2177766600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1321910300,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 5,
-  "name": "User should be able to login with correct credentials",
-  "description": "",
-  "id": "techfios-login-functionality-validation;user-should-be-able-to-login-with-correct-credentials",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
 formatter.step({
   "line": 6,
-  "name": "User is on the TechFios login page",
+  "name": "User is on the techfios login page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 7,
-  "name": "Users enter username as \"demo@techfios.com\"",
+  "name": "User enters the \"\u003cusername\u003e\"",
   "keyword": "When "
 });
 formatter.step({
   "line": 8,
-  "name": "Users enter password as \"abc123\"",
+  "name": "User enters the\"\u003cpassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
   "line": 9,
-  "name": "Users clicks on Submit button",
-  "keyword": "When "
+  "name": "User clicks on\"\u003clogin\u003e\" button",
+  "keyword": "And "
 });
 formatter.step({
   "line": 10,
-  "name": "User lands on Dashboard page",
+  "name": "User should land on Dashboard page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks on\"\u003cbankCash\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "User clicks on the\"\u003cnewAccount\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "User enters\"\u003caccountTitle\u003e\"in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 14,
+  "name": "User enters\"\u003cdescription\u003e\"in the accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "User enters \"\u003cinitialBalance\u003e\"in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "User enters\"\u003caccountNumber\u003e\" in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "User enters as\"\u003ccontactPerson\u003e\"in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "User enters as \"\u003cPhone\u003e\"in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 19,
+  "name": "User enters \"\u003cinternetBankingURL\u003e\" in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "User clicks on \"\u003csubmit\u003e\" button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "User should be able to validate account created successfully",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 22,
+  "name": "",
+  "description": "",
+  "id": "techfios-bank-abd-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials;",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password",
+        "accountTitle",
+        "description",
+        "initialBalance",
+        "accountNumber",
+        "contactPerson",
+        "phone",
+        "bankingURL"
+      ],
+      "line": 24,
+      "id": "techfios-bank-abd-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials;;1"
+    },
+    {
+      "cells": [
+        "demo@techfios.com",
+        "abc123",
+        "Anya\u0027s",
+        "checking",
+        "20",
+        "12365498",
+        "Anna Thomas",
+        "41256863",
+        "abc@gtr.com"
+      ],
+      "line": 25,
+      "id": "techfios-bank-abd-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials;;2"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.before({
+  "duration": 2224370700,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 25,
+  "name": "User should be able to login with valid credentials",
+  "description": "and open a new account",
+  "id": "techfios-bank-abd-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@AddAccountScenario"
+    }
+  ]
+});
+formatter.step({
+  "line": 6,
+  "name": "User is on the techfios login page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "User enters the \"demo@techfios.com\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "User enters the\"abc123\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 9,
+  "name": "User clicks on\"\u003clogin\u003e\" button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "User should land on Dashboard page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks on\"\u003cbankCash\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "User clicks on the\"\u003cnewAccount\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "User enters\"Anya\u0027s\"in accounts page",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 14,
+  "name": "User enters\"checking\"in the accounts page",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "User enters \"20\"in accounts page",
+  "matchedColumns": [
+    4
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "User enters\"12365498\" in accounts page",
+  "matchedColumns": [
+    5
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "User enters as\"Anna Thomas\"in accounts page",
+  "matchedColumns": [
+    6
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "User enters as \"\u003cPhone\u003e\"in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 19,
+  "name": "User enters \"\u003cinternetBankingURL\u003e\" in accounts page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "User clicks on \"\u003csubmit\u003e\" button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "User should be able to validate account created successfully",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefenition.user_is_on_the_TechFios_login_page()"
+  "location": "LoginStepDefenition.user_is_on_the_techfios_login_page()"
 });
 formatter.result({
-  "duration": 963029200,
+  "duration": 877728900,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "demo@techfios.com",
-      "offset": 25
+      "offset": 17
     }
   ],
-  "location": "LoginStepDefenition.users_enter_username_as(String)"
+  "location": "LoginStepDefenition.user_enters_the_username(String)"
 });
 formatter.result({
-  "duration": 10042033700,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027username\u0027]\"}\n  (Session info: chrome\u003d104.0.5112.81)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-2F3S0DP\u0027, ip: \u0027192.168.254.130\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\\Users\\annar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b53fbd5c3eb01eb65b67043cc9455997\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027username\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.sendKeys(Unknown Source)\r\n\tat pages.LoginPage.enterUserName(LoginPage.java:23)\r\n\tat steps.LoginStepDefenition.users_enter_username_as(LoginStepDefenition.java:31)\r\n\tat ✽.When Users enter username as \"demo@techfios.com\"(src/test/java/features/TechFiosLogin.feature:7)\r\n",
-  "status": "failed"
+  "duration": 5075794700,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "abc123",
-      "offset": 25
+      "offset": 16
     }
   ],
-  "location": "LoginStepDefenition.users_enter_password_as(String)"
+  "location": "LoginStepDefenition.user_enters_the_password(String)"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStepDefenition.users_clicks_on_Submit_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStepDefenition.user_lands_on_Dashboard_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 683547500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1378798200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1399882100,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 13,
-  "name": "User should be able to login with correct credentials",
-  "description": "",
-  "id": "techfios-login-functionality-validation;user-should-be-able-to-login-with-correct-credentials",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 12,
-      "name": "@OtherScenario2"
-    },
-    {
-      "line": 12,
-      "name": "@Smoke"
-    }
-  ]
-});
-formatter.step({
-  "line": 14,
-  "name": "User is on the TechFios login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 15,
-  "name": "Users enter username as \"demo2@techfios.com\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 16,
-  "name": "Users enter password as \"abc123\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 17,
-  "name": "Users clicks on Submit button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 18,
-  "name": "User lands on Dashboard page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStepDefenition.user_is_on_the_TechFios_login_page()"
-});
-formatter.result({
-  "duration": 558836200,
+  "duration": 3067179100,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "demo2@techfios.com",
-      "offset": 25
+      "val": "\u003clogin\u003e",
+      "offset": 15
     }
   ],
-  "location": "LoginStepDefenition.users_enter_username_as(String)"
+  "location": "LoginStepDefenition.user_clicks_on_login_button(String)"
 });
 formatter.result({
-  "duration": 10059726500,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027username\u0027]\"}\n  (Session info: chrome\u003d104.0.5112.81)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-2F3S0DP\u0027, ip: \u0027192.168.254.130\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\\Users\\annar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 69d3a46226c34551d307fb08a77f36c8\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027username\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.sendKeys(Unknown Source)\r\n\tat pages.LoginPage.enterUserName(LoginPage.java:23)\r\n\tat steps.LoginStepDefenition.users_enter_username_as(LoginStepDefenition.java:31)\r\n\tat ✽.When Users enter username as \"demo2@techfios.com\"(src/test/java/features/TechFiosLogin.feature:15)\r\n",
-  "status": "failed"
+  "duration": 9375656000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepDefenition.user_should_land_on_Dashboard_page()"
+});
+formatter.result({
+  "duration": 6832500,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "abc123",
-      "offset": 25
+      "val": "\u003cbankCash\u003e",
+      "offset": 15
     }
   ],
-  "location": "LoginStepDefenition.users_enter_password_as(String)"
+  "location": "LoginStepDefenition.user_clicks_on_bank_cash(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 53938100,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefenition.users_clicks_on_Submit_button()"
+  "arguments": [
+    {
+      "val": "\u003cnewAccount\u003e",
+      "offset": 19
+    }
+  ],
+  "location": "LoginStepDefenition.user_clicks_on_the_new_account(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 695451500,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefenition.user_lands_on_Dashboard_page()"
+  "arguments": [
+    {
+      "val": "Anya\u0027s",
+      "offset": 12
+    }
+  ],
+  "location": "LoginStepDefenition.user_enters_account_title_in_accounts_page(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 64656800,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "checking",
+      "offset": 12
+    }
+  ],
+  "location": "LoginStepDefenition.user_enters_description_in_the_accounts_page(String)"
+});
+formatter.result({
+  "duration": 61417600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "20",
+      "offset": 13
+    }
+  ],
+  "location": "LoginStepDefenition.user_enters_initial_balance_in_accounts_page(String)"
+});
+formatter.result({
+  "duration": 62187400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "12365498",
+      "offset": 12
+    }
+  ],
+  "location": "LoginStepDefenition.user_enters_account_number_in_accounts_page(String)"
+});
+formatter.result({
+  "duration": 68595900,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Anna Thomas",
+      "offset": 15
+    }
+  ],
+  "location": "LoginStepDefenition.user_enters_contact_person_in_accounts_page(String)"
+});
+formatter.result({
+  "duration": 66722500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "\u003cPhone\u003e",
+      "offset": 16
+    }
+  ],
+  "location": "LoginStepDefenition.user_enters_phone_in_accounts_page(String)"
+});
+formatter.result({
+  "duration": 54126000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "\u003cinternetBankingURL\u003e",
+      "offset": 13
+    }
+  ],
+  "location": "LoginStepDefenition.user_enters_banking_url_in_accounts_page(String)"
+});
+formatter.result({
+  "duration": 67387700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "\u003csubmit\u003e",
+      "offset": 16
+    }
+  ],
+  "location": "LoginStepDefenition.user_clicks_on_submit_button(String)"
+});
+formatter.result({
+  "duration": 633633000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepDefenition.user_should_be_able_to_validate_account_created_successfully()"
+});
+formatter.result({
+  "duration": 4064325300,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 618501000,
+  "duration": 688985900,
   "status": "passed"
 });
 });
